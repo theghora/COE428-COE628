@@ -1,0 +1,43 @@
+            Part 1. 
+    During this lab, I believe to have fully accomplished the required steps. Both algorithms have
+been completed. I understand the differences between the two different sorting algorithms. I do not
+believe I have any bugs.
+
+            Part 2.
+        Insertion Sort:
+    -first myCopy function runs for (n-1)times because for loop runs for (n-1)times
+    -myCompare function runs for the sum of (i=2)^nt number of times becuase while loop is activated
+        (n-1) times
+    -second myCopy function only runs if while loop passes myCompare condition. so it will run
+        sum of (i=2)^n(t-1)times. 
+    -Third and final myCopy runs n-1 times
+
+    General Equation: T(n)=(n-1)+(n-1)+sum of(i=2)^nt + sum of (i=2)^n(t-1)
+
+    Best Case: If already sorted
+    Average Case: Happens when randomly sorted. To find a value for this, every single possible
+        combination must be tested for and averaged
+    Worst Case: If array is sorted backwards
+
+        Merge Sort:
+    mySort:
+Uses recursion in the mySort function calling itself twice and myMerge. 
+T(n)=2(T/2)+merge -> T(n)= merge(log(n))+merge
+
+    myMerge:
+Runs n(log(n)) times 
+
+    Copy:2n(log(n))
+    Compare:sum of(i=2)^nt
+
+    General Equation: T(n)=2n(log(n))+ sum of(i=2)^nt
+    
+    Best Case: If already sorted
+    Average Case: Too much work to do, same as last times
+    Worst Case: Happens if the halfs of the arrays are split into odds and evens
+    
+
+
+
+
+
